@@ -1,0 +1,36 @@
+body {
+	background-image: url('darkwood.jpg');
+}
+
+.container {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-evenly;
+	border: 2px solid black;
+	padding: 20px 0;
+}
+
+#btnContainer button {
+    cursor: pointer;
+    height: 30px;
+	width: 100px;
+	font-size: larger;
+	font-weight: bold;
+}
+
+.dieDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+	font-size: 2em;
+	color: white;
+	background-image: url('smoke.png');
+	background-size: cover;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 10px;
+	border: 2px solid black;
+	height: 100px;
+	width: 100px;
+    margin: 10px;
+}
