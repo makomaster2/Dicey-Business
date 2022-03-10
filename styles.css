@@ -4,33 +4,46 @@ body {
 
 .container {
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	border: 2px solid black;
 	padding: 20px 0;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 #btnContainer button {
-    cursor: pointer;
-    height: 30px;
+	cursor: pointer;
+	color: white;
+	height: 30px;
 	width: 100px;
 	font-size: larger;
-	font-weight: bold;
+	border: 2px solid black;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.5) 1%,
+		rgba(255, 0, 0, 1) 50%,
+		rgba(0, 0, 0, 0.5) 99%
+	);
+}
+
+#btnContainer button:hover {
+	transition-duration: 0.9s;
+	background-color: red;
 }
 
 .dieDiv {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    cursor: pointer;
+	cursor: pointer;
 	font-size: 2em;
 	color: white;
 	background-image: url('smoke.png');
 	background-size: cover;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 	border: 2px solid black;
 	height: 100px;
 	width: 100px;
-    margin: 10px;
+	margin: 1.5em;
 }
